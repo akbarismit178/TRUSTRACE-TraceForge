@@ -1,0 +1,137 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: #0B1020;
+    color: #F9FAFB;
+    font-family: 'Inter', sans-serif;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0B1020;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #23325B;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #4F46E5;
+}
+
+/* Glassmorphism utility */
+.glass-panel {
+  background: rgba(17, 25, 54, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-card {
+  background: rgba(23, 34, 66, 0.65);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.glass-card-hover {
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-card-hover:hover {
+  background: rgba(27, 40, 78, 0.85);
+  border-color: rgba(99, 102, 241, 0.3);
+  box-shadow: 0 8px 32px -4px rgba(79, 70, 229, 0.2);
+}
+
+.cyber-grid-bg {
+  background-size: 32px 32px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+}
+
+.glow-text-primary {
+  text-shadow: 0 0 12px rgba(99, 102, 241, 0.5);
+}
+
+.glow-border-danger {
+  box-shadow: 0 0 20px -2px rgba(239, 68, 68, 0.5);
+}
+
+.glow-border-success {
+  box-shadow: 0 0 20px -2px rgba(16, 185, 129, 0.4);
+}
+
+/* LIGHT MODE COMPREHENSIVE OVERRIDES */
+html.light body, body.light {
+  background-color: #F8FAFC !important;
+  color: #0F172A !important;
+}
+
+html.light .bg-darkBg, body.light .bg-darkBg {
+  background-color: #F8FAFC !important;
+}
+
+html.light .bg-darkSurface, body.light .bg-darkSurface {
+  background-color: #FFFFFF !important;
+}
+
+html.light .bg-darkCard, body.light .bg-darkCard {
+  background-color: #F1F5F9 !important;
+}
+
+html.light .border-darkBorder, body.light .border-darkBorder {
+  border-color: #E2E8F0 !important;
+}
+
+html.light .text-gray-100, body.light .text-gray-100 {
+  color: #0F172A !important;
+}
+
+html.light .text-gray-200, body.light .text-gray-200 {
+  color: #1E293B !important;
+}
+
+html.light .text-gray-300, body.light .text-gray-300 {
+  color: #334155 !important;
+}
+
+html.light .text-gray-400, body.light .text-gray-400 {
+  color: #475569 !important;
+}
+
+html.light .text-white, body.light .text-white {
+  color: #0F172A !important;
+}
+
+html.light .glass-card, html.light .glass-panel, body.light .glass-card, body.light .glass-panel {
+  background: rgba(255, 255, 255, 0.95) !important;
+  border-color: rgba(0, 0, 0, 0.1) !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06) !important;
+}
+
+html.light .cyber-grid-bg, body.light .cyber-grid-bg {
+  background-image: 
+    linear-gradient(to right, rgba(0, 0, 0, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.03) 1px, transparent 1px) !important;
+}
+
+html.light ::-webkit-scrollbar-track, body.light ::-webkit-scrollbar-track {
+  background: #F1F5F9 !important;
+}
+
+html.light ::-webkit-scrollbar-thumb, body.light ::-webkit-scrollbar-thumb {
+  background: #CBD5E1 !important;
+}

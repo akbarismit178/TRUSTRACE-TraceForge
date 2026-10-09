@@ -1,0 +1,6 @@
+employees.sqlite3
+*.sqlite3-journal
+*.sqlite3-wal
+*.sqlite3-shm
+.env
+__pycache__/

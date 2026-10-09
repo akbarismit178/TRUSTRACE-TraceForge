@@ -1,0 +1,4 @@
+fastapi>=0.115,<1
+uvicorn>=0.30,<1
+httpx>=0.27,<1  # For the TestClient used by backend tests
+reportlab>=4,<5  # Generates authorized demo document previews as PDFs
