@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # TRUSTRACE — Zero-Trust Explainable AI Assistant (v2.0)
 
 **Tagline**: *Ask. Trace. Verify.*
@@ -90,3 +91,7 @@ The new employee email/login endpoints authenticate against this server database
 1. **Gate 1 (Pre-Retrieval)**: Permission filters applied *inside* vector & keyword queries (WHERE clause). Restricted documents are never retrieved first to be filtered afterwards.
 2. **Gate 2 (Context Assembly)**: Re-verifies every chunk ID against the policy engine and constructs a Context Manifest with a SHA-256 cryptographic hash.
 3. **Gate 3 (Output Guard)**: Scans generated text for PII/secret leaks and verifies all claims against cited chunks.
+=======
+# TRUSTRACE-TraceForge
+A Zero-Trust Explainable AI Assistant for Enterprises that securely answers questions from company documents using permission-aware Retrieval-Augmented Generation (RAG).
+>>>>>>> ce6407a2a6cadad0f65ebe6d6cf94c5f9c4fcfd7
